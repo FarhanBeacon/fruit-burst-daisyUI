@@ -10,23 +10,26 @@
     <!-- Tailwind & DaisyUI Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2ff2f6e9c4.js" crossorigin="anonymous"></script>
     <!-- Tailwind Customization -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#F85559',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <!-- Lato Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Styles -->
     <style>
         * {
@@ -36,10 +39,46 @@
 </head>
 
 <body>
-    <header>
-        <h1>Hello And Welcome</h1>
+    <header class="container mx-auto lg:py-7 lg:px-[140px]">
+        <div class="navbar lg:bg-[#F85559] lg:rounded-[50px] lg:px-5">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal lg:flex px-1 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center">
+                <a class="flex items-center gap-2 lg:text-white text-3xl font-bold"><img src="images/logo1.png" alt="logo">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li><a>Parent</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:flex">
+                    <form class="bg-white px-6 py-2 rounded-[50px]">
+                        <input type="text" placeholder="Search" name="n" class="bg-transparent focus:outline-none text-sm text-gray-400">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass text-sm "></i></button>
+                      </form>
+                </div>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main>
+    </main>
     <footer></footer>
 </body>
 
