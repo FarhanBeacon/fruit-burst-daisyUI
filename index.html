@@ -40,7 +40,7 @@
 
 <body>
     <header class="container mx-auto lg:px-[140px]">
-        <div class="navbar lg:bg-primary-color lg:rounded-[50px] lg:px-5 my-10">
+        <nav class="navbar lg:bg-primary-color lg:rounded-[50px] lg:px-5 my-10">
             <div class="navbar-start hidden lg:flex">
                 <ul class="menu menu-horizontal lg:flex px-1 text-white">
                     <li><a>Home</a></li>
@@ -77,9 +77,9 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </nav>
         <!-- Banner -->
-        <div>
+        <section>
             <div class="carousel w-full h-[450px] rounded-lg relative">
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(images/banner1.png);">
@@ -147,30 +147,169 @@
                 </div>
             </div>
 
-            <div
-                class="hidden lg:flex justify-between gap-16 mx-[100px] -my-28 px-12 py-12 border rounded-md shadow-sm relative z-10 bg-white">
-                <div>
-                    <img src="images/fruit1.png" alt="fruit">
-                    <p class="text-center">Strawberry</p>
+            <div class="hidden lg:flex justify-between gap-16 mx-[100px] -my-28 px-12 py-12 border rounded-md shadow-sm relative z-10 bg-white">
+                <!-- Fruit 1 -->
+                <div onclick="my_modal_1.showModal()">
+                    <img src="images/fruit1.png" alt="Red Grapes">
+                    <p class="text-center">Red Grapes</p>
+                    <!-- Modal -->
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box">
+                            <div class="flex justify-center">
+                                <img src="images/fruit1.png" alt="red grapes">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-bold text-2xl">Red Grapes</h3>
+                                <p class="px-20 py-2 text-xs">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <button class="btn text-primary-color bg-white border-primary-color">Cancel</button>
+                                    <button class="btn bg-primary-color text-white border-none">Buy Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
-                <div>
-                    <img src="images/fruit2.png" alt="fruit">
+                <!-- Fruit 2 -->
+                <div onclick="my_modal_2.showModal()">
+                    <img src="images/fruit2.png" alt="Orange">
                     <p class="text-center">Orange</p>
+                    <!-- Modal -->
+                    <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box">
+                            <div class="flex justify-center">
+                                <img src="images/fruit2.png" alt="Orange">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-bold text-2xl">Orange</h3>
+                                <p class="px-20 py-2 text-xs">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <button class="btn text-primary-color bg-white border-primary-color">Cancel</button>
+                                    <button class="btn bg-primary-color text-white border-none">Buy Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
-                <div>
-                    <img src="images/fruit3.png" alt="fruit">
+                <!-- Fruit 3 -->
+                <div onclick="my_modal_3.showModal()">
+                    <img src="images/fruit3.png" alt="Mango">
                     <p class="text-center">Mango</p>
+                    <!-- Modal -->
+                    <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box">
+                            <div class="flex justify-center">
+                                <img src="images/fruit3.png" alt="Mango">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-bold text-2xl">Mango</h3>
+                                <p class="px-20 py-2 text-xs">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <button class="btn text-primary-color bg-white border-primary-color">Cancel</button>
+                                    <button class="btn bg-primary-color text-white border-none">Buy Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
-                <div>
-                    <img src="images/fruit4.png" alt="fruit">
+                <!-- Fruit 4 -->
+                <div onclick="my_modal_4.showModal()">
+                    <img src="images/fruit4.png" alt="Strawberry">
                     <p class="text-center">Strawberry</p>
+                    <!-- Modal -->
+                    <dialog id="my_modal_4" class="modal">
+                        <div class="modal-box">
+                            <div class="flex justify-center">
+                                <img src="images/fruit4.png" alt="Strawberry">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-bold text-2xl">Strawberry</h3>
+                                <p class="px-20 py-2 text-xs">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <button class="btn text-primary-color bg-white border-primary-color">Cancel</button>
+                                    <button class="btn bg-primary-color text-white border-none">Buy Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
-                <div>
-                    <img src="images/fruit5.png" alt="fruit">
-                    <p class="text-center">Strawberry</p>
+                <!-- Fruit 5 -->
+                <div onclick="my_modal_5.showModal()">
+                    <img src="images/fruit5.png" alt="Pomegranate">
+                    <p class="text-center">Pomegranate</p>
+                    <!-- Modal -->
+                    <dialog id="my_modal_5" class="modal">
+                        <div class="modal-box">
+                            <div class="flex justify-center">
+                                <img src="images/fruit5.png" alt="Pomegranate">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-bold text-2xl">Pomegranate</h3>
+                                <p class="px-20 py-2 text-xs">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <button class="btn text-primary-color bg-white border-primary-color">Cancel</button>
+                                    <button class="btn bg-primary-color text-white border-none">Buy Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
-        </div>
+        </section>
     </header>
     <main class="container mx-auto my-12 lg:my-52 lg:px-[140px]">
         <!-- Deal of the day Section -->
@@ -372,7 +511,8 @@
                         <div class="space-y-2">
                             <h3 class="text-base font-bold text-center lg:text-left">Dedicated Team</h3>
                             <hr class="w-[20%] border border-black ms-[40%] lg:ms-0">
-                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick the most amazing and
+                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick
+                                the most amazing and
                                 fresh fruits.</p>
                         </div>
                     </div>
@@ -383,7 +523,8 @@
                         <div class="space-y-2">
                             <h3 class="text-base font-bold text-center lg:text-left">Fresh is Best</h3>
                             <hr class="w-[20%] border border-black ms-[40%] lg:ms-0">
-                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick the most amazing and
+                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick
+                                the most amazing and
                                 fresh fruits.</p>
                         </div>
                     </div>
@@ -392,9 +533,11 @@
                         <div class="flex justify-center items-center bg-gray-200 rounded-full w-14 h-14"><i
                                 class="fa-light fa-gift"></i></div>
                         <div class="space-y-2">
-                            <h3 class="text-base font-bold  text-center lg:text-left">Gift CertificatesGift Certificates</h3>
+                            <h3 class="text-base font-bold  text-center lg:text-left">Gift CertificatesGift Certificates
+                            </h3>
                             <hr class="w-[20%] border border-black ms-[40%] lg:ms-0">
-                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick the most amazing and
+                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick
+                                the most amazing and
                                 fresh fruits.</p>
                         </div>
                     </div>
@@ -412,7 +555,8 @@
                         <div class="space-y-2">
                             <h3 class="text-base font-bold text-center lg:text-end">Integrated Supplier</h3>
                             <hr class="w-[20%] border border-black ms-[40%] lg:ms-[80%]">
-                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick the most amazing and
+                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick
+                                the most amazing and
                                 fresh fruits.</p>
                         </div>
                     </div>
@@ -423,7 +567,8 @@
                         <div class="space-y-2">
                             <h3 class="text-base font-bold text-center lg:text-end">Sustainable Practice</h3>
                             <hr class="w-[20%] border border-black ms-[40%] lg:ms-[80%]">
-                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick the most amazing and
+                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick
+                                the most amazing and
                                 fresh fruits.</p>
                         </div>
                     </div>
@@ -434,7 +579,8 @@
                         <div class="space-y-2">
                             <h3 class="text-base font-bold text-center lg:text-end">The Benefits Only</h3>
                             <hr class="w-[20%] border border-black ms-[40%] lg:ms-[80%]">
-                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick the most amazing and
+                            <p class="text-center lg:text-left text-sm">Professional employees are there for you to pick
+                                the most amazing and
                                 fresh fruits.</p>
                         </div>
                     </div>
@@ -444,8 +590,9 @@
     </main>
     <footer class="footer footer-center p-10 bg-black">
         <aside>
-            <a class="flex items-center gap-2 text-white text-3xl font-bold"><img src="images/logo1.png" alt="logo">Fruit Burst</a>
-            <p class="text-white">Copyright © 2024 - All right reserved</p>
+            <a class="flex items-center gap-2 text-white text-3xl font-bold"><img src="images/logo1.png"
+                    alt="logo">Fruit Burst</a>
+            <p class="text-white">Copyright © 2024 - All right reserved By Fab</p>
         </aside>
         <nav>
             <div class="grid grid-flow-col gap-8">
